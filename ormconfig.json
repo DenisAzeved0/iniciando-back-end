@@ -1,0 +1,21 @@
+{
+  "type": "mssql",
+	"host": "DENIS-NOTE",
+  "port": 15015,
+  "username": "gobarber",
+  "password": "gobarber",
+  "database": "gostack_gobarber",
+  "entities": [
+    "./src/models/*.ts"
+  ],
+  "migrations" : [
+    "./src/database/migrations/*.ts"
+  ],
+  "cli": {
+    "migrationsDir": "./src/database/migrations"
+  },
+  "options" : {
+    "encrypt": true,
+    "enableArithAbort": true
+  }
+}
